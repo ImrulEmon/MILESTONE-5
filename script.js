@@ -17,7 +17,19 @@ function updateTotal() {
     const extraDelivery = document.getElementById("extra-delivery").innerText;
     const total = parseInt(base) + parseInt(extraMemory)+parseInt(extraStorage)+parseInt(extraDelivery);
     document.getElementById("total").innerText = total;
+    document.getElementById("final").innerText = total;
+   
 }
+
+function discount() {
+    const voucher =  document.getElementById("discount").value;
+    const finalPrice =  document.getElementById("final").innerText;
+    if(voucher=="20%OFF"){
+        document.getElementById("final").innerText = parseFloat(finalPrice) - (parseFloat(finalPrice)/5);
+        document.getElementById("discount-btn").disabled=true;
+    }
+}
+
 document.getElementById("8gb").addEventListener('click',function () {
     extraPrice("memory",true,0);
     updateTotal();
