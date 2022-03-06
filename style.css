@@ -11,3 +11,6 @@
     background-color: #000000;
     border-color: #aaa0a0; /*set the color you want here*/
 }
+hr{
+    border: 1px solid black;
+}
