@@ -1,0 +1,13 @@
+.btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #357ebd; 
+    height: 35px;
+    /*set the color you want here*/
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #aaa0a0; /*set the color you want here*/
+}
